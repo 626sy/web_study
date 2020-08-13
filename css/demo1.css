@@ -1,0 +1,11 @@
+div{
+    width: 500px;
+    height: 300px;
+    font-size: 40px;
+    text-align: center;
+    border: 2px red solid;
+}
+p {
+    color: blue;
+
+}
