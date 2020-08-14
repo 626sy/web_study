@@ -8,6 +8,8 @@
         .one{
             width: 300px;
             background-color: pink;
+            overflow: auto;
+        /*    auto  scroll*/
         }
         /*.one-da和.one-xiao浮动了，不占有位置，而且父级没有高度
             two会到顶上去*/
@@ -29,6 +31,9 @@
             height: 130px;
             background-color: black;
         }
+        /*.clear{*/
+        /*    clear: both;*/
+        /*}*/
 
 
     </style>
@@ -37,6 +42,7 @@
 <div class="one">
     <div class="one-da"></div>
     <div class="one-xiao"></div>
+<!--    <div style="clear: both"></div>-->
 </div>
 <div class="two"></div>
 </body>
