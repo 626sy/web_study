@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //一、 1 ~ num的累加和
+/*        function caculateNum(num) {
+            var sum = 0;
+            for (var i = 0; i <= num; i++) {
+                sum += i;
+            }
+            console.log(sum)
+            return sum;
+        }*/
+        //二、 给定两个数 num1 ,num2 求这两个数中最大的值
+        function twosum(num1 ,num2){
+/*            var max = 0;
+            if (num1>num2){
+                max = num1;
+            }else {
+                max = num2;
+            }
+            console.log(max)
+            return max;*/
+            return num1>num2?num1:num2;
+        }
+        //三、
+        var fun = function (num){
+            console.log("匿名函数被调用到"+ num)
+        }
+        fun(100);
+
+/*        var result = caculateNum(100);
+        alert(result);*/
+
+/*        var  result1 = twosum(12,23);
+        alert(result1)*/
+    </script>
+</head>
+<body>
+
+</body>
+</html>
