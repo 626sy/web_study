@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button id="lufei">路飞</button>
+    <button id="suolong">索隆</button>
+</div>
+
+<img src="../imgs/lufei.jfif" alt=""  title="路飞">
+<script>
+    // 获取元素
+    var lufei = document.getElementById('lufei');
+    var suolong = document.getElementById('suolong');
+    var imgh = document.querySelector('img');
+    // 注册事件
+    lufei.onclick = function (){
+        imgh.src = '../imgs/lufei.jfif';
+        imgh.title = '路飞';
+    }
+    suolong.onclick = function (){
+        imgh.src = '../imgs/suolong.jfif';
+        imgh.title = '索隆';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button id="namei">娜美</button>
+    <button id="luobin">罗宾</button>
+</div>
+<img src="../imgs/luobin.jfif" alt="" title="">
+<script>
+    var namei = document.getElementById('namei');
+    var luobin = document.getElementById('luobin')
+    var imgs = document.querySelector('img');
+    namei.onclick = function (){
+        imgs.src = '../imgs/namei.jpg';
+
+    }
+    luobin.onclick = function (){
+        imgs.src = '../imgs/luobin.jfif'
+
+    }
+</script>
+</body>
+</html>

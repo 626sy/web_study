@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img src="" alt="">
+
+<div>
+
+</div>
+<script>
+    var div = document.querySelector('div');
+    var imgs = document.querySelector('img');
+    var date = new Date();
+    var hours = date.getHours();
+    // var hours = 19;
+    if(hours>0 && hours<=6){
+        imgs.src = '../imgs/hao/z.gif';
+        div.innerHTML = '早上好';
+    }else if (hours>6 && hours<=12){
+        imgs.src = '../imgs/hao/s.gif';
+        div.innerHTML = '上午好';
+    }else if (hours>12 && hours<=18){
+        imgs.src = '../imgs/hao/x.gif';
+        div.innerHTML = '下午好';
+    }else{
+        imgs.src = '../imgs/hao/w.gif';
+        div.innerHTML = '晚上好';
+    }
+
+
+</script>
+
+</body>
+</html>
