@@ -11,7 +11,23 @@
     console.log(div.id);    // demo
     console.log(div.index);    // undefined
     console.log(div.getAttribute('id'))     // demo
-    console.log(div.getAttribute('index'))  // 自定义
+    console.log(div.getAttribute('index'))  // 自定义 1
+    console.log('+++++++++++++++++++++++++++++++++++++++')
+    div.id = 'test'
+    console.log(div.id)     // test
+    div.className = 'navs';
+    console.log(div.className)
+
+    div.setAttribute('index',2)
+    console.log(div.getAttribute('index'))  //2
+    div.setAttribute('class','footer')      // footer
+    // class 特殊
+    console.log(div.className)      //footer
+    console.log(div.class)          // undefined
+    // 移除属性
+    div.removeAttribute('index')
+    console.log(div.getAttribute('index'))  //null
+
 </script>
 </body>
 </html>
