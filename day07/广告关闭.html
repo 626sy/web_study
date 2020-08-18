@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            position: relative;
+            width: 1190px;
+            height: 80px;
+            margin: auto;
+        }
+        .close{
+            position: absolute;
+            right: 0;
+        }
+        .closeAll{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <img src="../imgs/jdad/luzhou.jpg" alt="" class="guanggao">
+    <img src="../imgs/jdad/close.jpg" alt="" class="close">
+</div>
+<script>
+    var close = document.querySelector('.close')
+    var imgs = document.querySelector('.guanggao')
+    var box = document.querySelector('.box')
+    close.onclick = function (){
+        // imgs.src = '';
+        // close.src = '';
+        // box.style.display = 'none'
+        box.className = 'box closeAll'
+
+    }
+</script>
+</body>
+</html>
