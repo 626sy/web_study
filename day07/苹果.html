@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+            background-color: #818775;
+            width: 200px;
+            margin: auto;
+        }
+        thead{
+            background-color: #8ab81f;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <table>
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox" id="j_cbAll" />
+            </th>
+            <th>商品</th>
+            <th>价钱</th>
+        </tr>
+        </thead>
+        <tbody id="j_tb">
+        <tr>
+            <td>
+                <input type="checkbox" />
+            </td>
+            <td>iPhone8</td>
+            <td>8000</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" />
+            </td>
+            <td>iPad Pro</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" />
+            </td>
+            <td>iPad Air</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" />
+            </td>
+            <td>Apple Watch</td>
+            <td>2000</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<script>
+    var j_cbAll = document.getElementById('j_cbAll')  // 全选按钮
+    // 下面的所有复选框
+    var j_tbs = document.getElementById('j_tb').querySelectorAll('input')
+
+    j_cbAll.onclick = function (){
+        for (var i = 0; i < j_tbs.length; i++) {
+            if (j_cbAll.checked){
+                j_tbs[i].checked= true;
+                console.log(j_tbs[i].checked)
+            }else {
+                j_tbs[i].checked= false;
+            }
+            // 方法2
+            // j_tbs[i].checked = this.checked;
+        }
+        // 下面的复选框全部选中，上面的全选自动变成选中
+/*        for (var i = 0; i < j_tbs.length; i++) {
+            j_tbs[i].onclick = function (){
+                var flag = true;
+                // 每次点击下面的复选框都有检查4个小按钮是否全被选中
+                for (var j = 0; j < j_tbs.length; j++) {
+                    if (!j_tbs[j].checked){
+                        // 没有被选中
+                        flag = false;
+                        // 只要有一个没选中就不需要判断了
+                        break;
+                    }
+                }
+                j_cbAll.checked = flag;
+            }
+        }*/
+        for (var i = 0; i < j_tbs.length; i++) {
+            j_tbs[i].onclick = function (){
+                for (var j = 0; j < j_tbs.length; j++) {
+                    var flag = true;
+                    if (!j_tbs[j].checked){
+                        flag = false;
+                        break;
+                    }
+                }
+                j_cbAll.checked = flag;
+            }
+        }
+
+    }
+</script>
+</body>
+</html>
