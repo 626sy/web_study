@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .change{
+            background-color: yellowgreen;
+            color: wheat;
+            font-size: 30px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">文本</div>
+<script>
+    var test = document.querySelector('div');
+    flag = 0;
+    test.onclick = function (){
+/*        if (flag == 0){
+            this.style.backgroundColor = 'yellow';
+            this.style.marginTop ='200px';
+            this.style.fontSize = '40px';
+            this.style.color = 'green'
+            flag = 1;
+        }else {
+            this.style.backgroundColor = 'skyblue';
+            this.style.marginTop ='0';
+            this.style.fontSize = '16px';
+            this.style.color= 'yellow';
+            flag = 0;
+        }*/
+
+        // 将change样式塞入<div class="box">文本</div>中
+        // 通过修改className更改样式
+        this.className = 'box change';
+    }
+</script>
+</body>
+</html>
