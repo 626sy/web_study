@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>11111</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<script>
+    var ul = document.querySelector('ul')
+    // 只复制标签，不复制内容和子节点
+    var li1clone = ul.children[0].cloneNode(false)
+    // 都复制
+    var li1clone1 = ul.children[1].cloneNode(true)
+    ul.appendChild(li1clone)
+    ul.appendChild(li1clone1)
+
+
+</script>
+</body>
+</html>
