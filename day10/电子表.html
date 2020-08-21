@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 400px;
+            height: 40px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+
+<script>
+    var div = document.querySelector('div')
+    setInterval(now,1000)
+    function now() {
+        var nowTime = new Date();
+        var year = nowTime.getFullYear();
+        var month = nowTime.getMonth()+1;
+        var day = nowTime.getDate();
+        var week = nowTime.getDay();
+        var hour = nowTime.getHours();
+        hour = hour<10?'0'+hour:hour;
+        var minutes = nowTime.getMinutes();
+        minutes = minutes<10?'0'+minutes:minutes;
+        var second = nowTime.getSeconds();
+        second = second<10?'0'+second:second;
+        div.innerHTML = year+'年'+month+'月'+day+'日  星期'+week+'   '+hour+':'+minutes+':'+second;
+    }
+
+    now()
+</script>
+</body>
+</html>
