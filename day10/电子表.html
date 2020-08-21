@@ -22,6 +22,7 @@
         var year = nowTime.getFullYear();
         var month = nowTime.getMonth()+1;
         var day = nowTime.getDate();
+        var arr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
         var week = nowTime.getDay();
         var hour = nowTime.getHours();
         hour = hour<10?'0'+hour:hour;
@@ -29,7 +30,7 @@
         minutes = minutes<10?'0'+minutes:minutes;
         var second = nowTime.getSeconds();
         second = second<10?'0'+second:second;
-        div.innerHTML = year+'年'+month+'月'+day+'日  星期'+week+'   '+hour+':'+minutes+':'+second;
+        div.innerHTML = year+'年'+month+'月'+day+'日  '+arr[week]+'   '+hour+':'+minutes+':'+second;
     }
 
     now()
