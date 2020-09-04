@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="372c0796-b0e4-4636-8a13-2baca45ec8d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day01/baidu.html" beforeDir="false" afterPath="$PROJECT_DIR$/day01/baidu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day01/demo2.html" beforeDir="false" afterPath="$PROJECT_DIR$/day01/demo2.html" afterDir="false" />
@@ -91,6 +92,7 @@
       <workItem from="1598277472430" duration="85000" />
       <workItem from="1598777348809" duration="39000" />
       <workItem from="1598777487203" duration="1275000" />
+      <workItem from="1599136080285" duration="532000" />
     </task>
     <servers />
   </component>
@@ -99,8 +101,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/web_study" />
+      <path value="$PROJECT_DIR$/web_study/day01" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="516" y="243" key="#Notifications" timestamp="1599136581845">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="516" y="243" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1599136581845" />
     <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597627763405">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -109,10 +119,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1598777386691" />
-    <state x="270" y="61" key="SettingsEditor" timestamp="1598777528677">
+    <state x="270" y="61" key="SettingsEditor" timestamp="1599136602294">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1598777528677" />
+    <state x="270" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1599136602294" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1597888689328">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
